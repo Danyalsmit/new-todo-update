@@ -184,7 +184,15 @@ function App() {
         {list.map((prop) => {
           return (
             <div id="cen" className="mb-3" key={prop.id}>
-              <div className="card" style={{ width: "18rem" }}>
+              <div
+                className="card"
+                style={{
+                  width: "18rem",
+                  outline: "none",
+                  border: "none",
+                  boxShadow: "none",
+                }}
+              >
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">{prop.data}</li>
                 </ul>
