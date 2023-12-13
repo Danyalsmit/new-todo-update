@@ -7,7 +7,6 @@ export const todoReducer = (state = initialData, action) => {
   switch (action.type) {
     case "Add-Todo":
       const { id, data } = action.payload;
-      //  console.log("action.payload",action.payload)
       return {
         ...state,
         list: [
@@ -27,6 +26,8 @@ export const todoReducer = (state = initialData, action) => {
       };
     case "UPDATE_ITEM":
       const uarray = updateItemOnce(state.list, action.payload);
+      
+
 
       return {
         ...state,

@@ -10,7 +10,7 @@ export const Add = (data) => {
 };
 
 export const Delete = (num) => {
-  // console.log("num", num);
+  //  console.log("num", num);
 
   return {
     type: "delete-Todo",
@@ -18,7 +18,7 @@ export const Delete = (num) => {
   };
 };
 export const updateValue = (upvalue) => {
-  console.log("up",upvalue);
+  // console.log("up",upvalue);
 
   return {
     type: "UPDATE_ITEM",

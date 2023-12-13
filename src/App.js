@@ -122,11 +122,11 @@ import {
   faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 
-function App() {
+function App() { 
   const [input, setInput] = useState("");
   const [editingId, setEditingId] = useState(null);
   const dispatch = useDispatch();
-  const { list } = useSelector((state) => state.todoReducer);
+  const { list } = useSelector((list) => list.todoReducer);
 
   const handleAdd = () => {
     if (input) {
